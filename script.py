@@ -11,13 +11,13 @@ def linear_search(search_list, target_value):
     raise ValueError("{} not in list".format(target_value))
 
 def linear_search_largest(search_list):
-    maximum_score_index = None
+    max_value_idx = None
 
     for i in range(len(search_list)):
-        if maximum_score_index is None or search_list[i] > search_list[maximum_score_index]:
-            maximum_score_index = i
+        if max_value_idx is None or search_list[i] > search_list[max_value_idx]:
+            max_value_idx = i
 
-    return maximum_score_index
+    return max_value_idx
 
 
 tour_locations = ["New York City", "Los Angeles", "Bangkok", "Istanbul", "London", "New York City", "Toronto"]
